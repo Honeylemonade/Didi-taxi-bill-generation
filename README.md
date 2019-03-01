@@ -1,5 +1,5 @@
 ## Didi-taxi-bill-generation
-# 使用html生成滴滴打车账单，现阶段需更改源代码内容，并手动使用浏览器打开，可得到账单界面
+# 滴滴打车账单生成脚本
 介绍：
 - 基于**jQuery,bootstrap**框架
 
