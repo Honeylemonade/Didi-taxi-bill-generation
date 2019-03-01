@@ -1,0 +1,116 @@
+
+.total {
+    position: relative;
+    margin: auto;
+    border: 3px solid;
+    border-color: white;
+    background-color: white;
+    height: 100%;
+    /*background-image: url(img/整张模板.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% ;*/
+}
+
+.extreTableDiv {
+    padding-top: 11px;
+    padding-left: 57px;
+    text-align: left;
+    font-weight: lighter;
+    font-family: "微软雅黑";
+    font-size: 6px;
+}
+
+.extreTable {
+    width: 510px;
+    height: 40px;
+    font-family: "Microsoft New Tai Lue";
+}
+
+.mainTableDiv {
+    margin: auto;
+    width: 89.5%;
+    padding-top: 10px;
+    padding-left: 17px;
+}
+
+.mainTable {
+    width: 698px;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+}
+
+.white {
+    height: 42px;
+    background-color: #ffffff;
+    color: #747474;
+}
+
+.grey {
+    height: 42px;
+    background-color: #f0f0f0;
+    color: #747474;
+}
+
+thead td {
+    background-color: #666666;
+    color: #f2f2f2;
+    border-right: 1px solid grey;
+}
+
+.mainTable tr {
+    border-top: 1px solid #d0d0d0;
+    font-family: "Microsoft New Tai Lue";
+}
+
+.extreInput {
+    border: 0;
+    font-weight: 300;
+}
+
+.whiteInput {
+    border: 0;
+    text-align: center;
+    color: #747474;
+    width: 100%;
+}
+
+.grayInput {
+    border: 0;
+    text-align: center;
+    color: #747474;
+    width: 100%;
+    background-color: #f0f0f0;
+
+}
+
+.operation {
+    position: fixed;
+    text-align: center;
+    left: 0px;
+    top: 300px;
+    height: 310px;
+    width: 120px;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #dcdcdc;
+    border: 2px solid #a0a0a0;
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+.page {
+    font-weight: bold;
+    font-size: x-small;
+    font-family: "Microsoft New Tai Lue";
+    position: absolute;
+    width: 60px;
+    left: 700px;
+    top: 980px;
+}

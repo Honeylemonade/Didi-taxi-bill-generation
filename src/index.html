@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>滴滴打车账单生成</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <!--css代码域-------------------------------------------------------------------->
+
+</head>
+<body style="background-color: #eaeaea;">
+<!--htmlBODY代码域--------------------------------------------------------------------->
+<div class="container">
+    <div class="row">
+        <div class="total ">
+            <!--表头-->
+            <img src="img/头模板.png" style="width: 800px" alt="头模板">
+            <!--副表-->
+            <div class="extreTableDiv">
+                <table class="extreTable">
+                    <tr>
+                        <th style="font-weight: normal;">▌申请日期: <input class="extreInput" value="2019-01-01"
+                                                                       type="text"></th>
+                        <th style="font-weight: normal;">▌行程时间: <input class="extreInput" value="2019-01-10"
+                                                                       style="width: 60px" type="text">至 <input
+                                class="extreInput" value="2019-01-10" style="width: 60px" type="text"></th>
+                    </tr>
+                    <tr>
+                        <th style="font-weight: normal;">▌行程人手机号:<input class="extreInput" value="15845805261"
+                                                                        type="text"></th>
+                        <th style="font-weight: normal;">▌共<input class="extreInput"
+                                                                  style="text-align: center;width: 15px" value="10"
+                                                                  type="text">笔行程 ，合计 <input class="extreInput"
+                                                                                             value="1413.15元"
+                                                                                             type="text"></th>
+                    </tr>
+                </table>
+            </div>
+            <!--主表-->
+            <div class="mainTableDiv">
+                <table class="mainTable" style="font-size: small">
+                    <thead>
+                    <tr style="height: 52px">
+                        <td width="70">序号</td>
+                        <td width="70">车型</td>
+                        <td width="220">上车时间</td>
+                        <td width="130">城市</td>
+                        <td width="480">起点</td>
+                        <td width="480">终点</td>
+                        <td width="100">
+                            <div>里程</div>
+                            <div>[公里]</div>
+                        </td>
+                        <td width="80">
+                            <div>金额</div>
+                            <div>[元]</div>
+                        </td>
+                        <td width="140">备注</td>
+                    </tr>
+                    </thead>
+                    <tbody style="font-size: x-small" id="tbody">
+                    <tr class="white">
+                        <td><input class="whiteInput" value="1" type="text"></td>
+                        <td><input class="whiteInput" value="快车" type="text"></td>
+                        <td><input class="whiteInput" value="01-03 19:04 周四" type="text"></td>
+                        <td><input class="whiteInput" value="上海市" type="text"></td>
+                        <td><input class="whiteInput" value="诺亚方舟自动化科技公司" type="text"></td>
+                        <td><input class="whiteInput" value="上海大华虹桥假日酒店" type="text"></td>
+                        <td><input class="whiteInput" value="5.0" type="text"></td>
+                        <td><input class="whiteInput" value="125.75" type="text"></td>
+                        <td></td>
+                    </tr>
+                    <tr class="grey">
+                        <td><input class="grayInput" value="1" type="text"></td>
+                        <td><input class="grayInput" value="快车" type="text"></td>
+                        <td><input class="grayInput" value="01-03 19:04 周四" type="text"></td>
+                        <td><input class="grayInput" value="上海市" type="text"></td>
+                        <td><input class="grayInput" value="诺亚方舟自动化科技公司" type="text"></td>
+                        <td><input class="grayInput" value="上海大华虹桥假日酒店" type="text"></td>
+                        <td><input class="grayInput" value="5.0" type="text"></td>
+                        <td><input class="grayInput" value="125.75" type="text"></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page">页码:1/1</div>
+            <!--操作框-->
+            <div class="operation">
+                <img src="img/logo.png" style="margin-bottom: 10%" class="img-fluid" alt="Responsive image">
+
+                <p class="font-weight-bold">滴滴出行</p>
+                <select id="selector" style="width:80px;margin-bottom: 10%" class="custom-select mr-sm-2">
+                    <option value="1">1 行</option>
+                    <option value="2">2 行</option>
+                    <option value="3">3 行</option>
+                    <option value="4">4 行</option>
+                    <option value="5">5 行</option>
+                    <option value="6">6 行</option>
+                    <option value="7">7 行</option>
+                    <option value="8">8 行</option>
+                    <option value="9">9 行</option>
+                    <option value="10">10 行</option>
+                    <option value="11">11 行</option>
+                    <option value="12">12 行</option>
+                    <option value="13">13 行</option>
+                </select>
+                <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" id="init">生成</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+                            title="导出图片功能暂未开放，敬请期待">导出
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+                            title="鼠标单击表单中内容，即可进行修改">帮助
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
