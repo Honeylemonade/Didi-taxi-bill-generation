@@ -11,3 +11,5 @@
 - 可以自动生成指定行数表格
 
 >**此项目仅供技术交流，禁止用于商业违法用途**
+
+![Image text](https://github.com/Honeylemonade/Didi-taxi-bill-generation/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.png)
